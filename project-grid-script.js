@@ -20,7 +20,7 @@ const projects = [
       "PROJECT-PAGES/CHAIR-PROJECT/mesitting_good.webp",
       "PROJECT-PAGES/CHAIR-PROJECT/1722_Sectiondrawing_ copy_cover.webp"
     ],
-    link: "#"
+    link: "PROJECT-PAGES/CHAIR-PROJECT/"
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const projects = [
       "PROJECT-PAGES/OOAN-PROJECT/exploded_axon_drawing_att05_export03.jpg",
       "PROJECT-PAGES/OOAN-PROJECT/thinginspace_cover01.webp"
     ],
-    link: "#"
+    link: "PROJECT-PAGES/OOAN-PROJECT/ooan-page.html"
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projects = [
       "PROJECT-PAGES/WRITER-PROJECT/section-cover01.webp",
       "PROJECT-PAGES/WRITER-PROJECT/Model_photo02 copy.webp"
     ],
-    link: "#"
+    link: "PROJECT-PAGES/WRITER-PROJECT/writer-page.html"
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const projects = [
     images: [
       "PROJECT-PAGES/GEO-PROJECT/Project2GR_FrameAnimation_JackFuller.gif"
     ],
-    link: "#"
+    link: "PROJECT-PAGES/GEO-PROJECT/"
   },
   {
     id: 6,
@@ -76,7 +76,7 @@ const projects = [
       "PROJECT-PAGES/DIAGRAM-PROJECT/proj1-1_lightrail2_print2.webp",
       "PROJECT-PAGES/DIAGRAM-PROJECT/Generative_Model_Final-Print_01.webp"
     ],
-    link: "#"
+    link: "PROJECT-PAGES/DIAGRAM-PROJECT/"
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const projects = [
       "PROJECT-PAGES/AIRPORT-PROJECT/term1 section perspective drawing f.webp",
       "PROJECT-PAGES/AIRPORT-PROJECT/term1 stair draw2 f.webp"
     ],
-    link: "#"
+    link: "PROJECT-PAGES/AIRPORT-PROJECT/"
   },
 ];
 
