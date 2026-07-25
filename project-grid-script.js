@@ -32,7 +32,7 @@ const projects = [
       "PROJECT-PAGES/OOAN-PROJECT/exploded_axon_drawing_att05_export03.jpg",
       "PROJECT-PAGES/OOAN-PROJECT/thinginspace_cover01.webp"
     ],
-    link: "PROJECT-PAGES/PROCESS-PROJECT/process-page2.html"
+    link: "PROJECT-PAGES/OOAN-PROJECT/ooan-page.html"
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const projects = [
       "PROJECT-PAGES/WRITER-PROJECT/section-cover01.webp",
       "PROJECT-PAGES/WRITER-PROJECT/Model_photo02 copy.webp"
     ],
-    link: "PROJECT-PAGES/PROCESS-PROJECT/process-page2.html"
+    link: "PROJECT-PAGES/WRITER-PROJECT/writer-page.html"
   },
   {
     id: 5,
