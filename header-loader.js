@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   if (!target) return;
 
   try {
-    const response = await fetch("/header.html");
+    const response = await fetch("jf-portfolio/header.html");
     if (!response.ok) {
       throw new Error(`Failed to load header: ${response.status}`);
     }
