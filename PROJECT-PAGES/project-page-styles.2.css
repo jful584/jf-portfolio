@@ -125,7 +125,7 @@ img {
 
 
 .section-grid {
-  padding: var(--);
+  padding: var(--page-padding);
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: var(--section-gap);
@@ -150,6 +150,9 @@ img {
 
 .media-block.reverse {
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 2.5rem;
+    align-items: center;
+    justify-items: center;
 }
 
 .media-text {
@@ -174,7 +177,7 @@ img {
 .media-frame,
 .carousel {
   width: 100%;
-  min-height: 420px;
+  min-height: 700px;
   background: var(--surface);
   border: 1px solid var(--line);
   overflow: hidden;
@@ -186,7 +189,7 @@ img {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 420px;
+  max-height: 700px;
   object-fit: contain;
   object-position: center;
 }
