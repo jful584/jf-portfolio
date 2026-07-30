@@ -54,7 +54,7 @@ const projects = [
     images: [
       "PROJECT-PAGES/GEO-PROJECT/Project2GR_FrameAnimation_JackFuller.gif"
     ],
-    link: "PROJECT-PAGES/GEO-PROJECT/"
+    link: "PROJECT-PAGES/GEO-PROJECT/geo-page.html"
   },
   {
     id: 6,
