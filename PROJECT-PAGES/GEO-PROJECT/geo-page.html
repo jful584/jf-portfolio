@@ -16,30 +16,26 @@
     <!-- HERO: replace the title, date, description, metadata, and image -->
     <section class="hero">
       <div class="hero-text">
-        <h1>[Project Title]</h1>
-        <span class="date">[Semester / Year]</span>
+        <h1>Geometric Reasoning</h1>
+        <span class="date">Spring 2026</span>
         <p>
-          [Short one-sentence description of the project.]
+          Using the motion of a series of objects as a machine to create a new drawing
         </p>
 
         <div class="meta">
           <div class="meta-item">
             <span class="meta-label">Type</span>
-            <span class="meta-value">[School Project / Competition / Studio]</span>
+            <span class="meta-value">First Year Representation Project</span>
           </div>
           <div class="meta-item">
-            <span class="meta-label">Programs</span>
-            <span class="meta-value">[Rhino, Illustrator, Photoshop]</span>
-          </div>
-          <div class="meta-item">
-            <span class="meta-label">Influences</span>
-            <span class="meta-value">[Materials / precedents / concepts]</span>
+            <span class="meta-label">Tools</span>
+            <span class="meta-value">Rhino, Grasshopper, Illustrator, Photoshop, 3D Printing</span>
           </div>
         </div>
       </div>
 
       <div class="hero-image">
-        <img src="images/hero-image.jpg" alt="Hero image for project" />
+        <img src="ModelPhoto_03_detailed1 copy.webp" alt="Hero image for project" />
       </div>
     </section>
 
@@ -47,117 +43,29 @@
       <!-- SINGLE IMAGE ON THE RIGHT -->
       <div class="media-block reverse">
         <div class="media-text">
-          <h2>[Section Title: Text Left, Image Right]</h2>
+          <h2>The Drawing Machine</h2>
           <p>
-            [Write a short paragraph describing this phase of the project, the site, the concept,
-            or the design move being shown in the image.]
+            The machine is created from the three objects that represented the 'soul' of the pencil sharpener from the
+            "Objects of Arresting Novelty" project: the motor, the metal encasing, and the sharpener screw. A series of transformations
+            allow the objects to create a drawing as they shift and rotate together. All objects first rotate around 
+            the bounding box's centroid axis. Next, all are rotated around the axis of the motor, 
+            then around the sharpener's encasing, and finally the sharpener spiral rotates about its own axis. 
+            Meanwhile, the elements slowly separate from each other, emulating an exploded axon diagram.
           </p>
           <p>
-            [Add a second paragraph if needed. If not, remove this paragraph block.]
+            By constructing a curve through key points attached to the objects, new curves emerge as the transformations occur.
+            The final drawing (right) was created by dividing the series of curves into many points, shifting the indices of each point
+            incrementally, and connecting the corresponding indices to create the diagonal sweeping
+            motion seen in the final model.
           </p>
         </div>
 
         <div class="media-frame">
-          <img src="images/right-image.jpg" alt="Project image on the right" />
+          <img src="2.9_draw2.webp" />
         </div>
       </div>
 
-      <!-- SINGLE IMAGE ON THE LEFT -->
-      <div class="media-block">
-        <div class="media-frame">
-          <img src="images/left-image.jpg" alt="Project image on the left" />
-        </div>
-
-        <div class="media-text">
-          <h2>[Section Title: Image Left, Text Right]</h2>
-          <p>
-            [Use the same structure whenever you want one image beside text.]
-          </p>
-          <p>
-            [This layout automatically stacks into one column on smaller screens, and the text
-            centers itself.] 
-          </p>
-        </div>
-      </div>
-
-      <!-- CAROUSEL ON THE RIGHT -->
-      <div class="media-block reverse">
-        <div class="media-text">
-          <h2>[Section Title: Text Left, Carousel Right]</h2>
-          <p>
-            [Use a carousel when you want to show multiple drawings, diagrams, or process images
-            in the same space.]
-          </p>
-          <p>
-            [To add more slides, duplicate a .carousel-slide block and change the image path.] 
-          </p>
-        </div>
-
-        <div class="carousel" data-carousel>
-          <button class="carousel-button prev" type="button" aria-label="Previous image">&#8592;</button>
-
-          <div class="carousel-track">
-            <div class="carousel-slide">
-              <img src="images/carousel-right-1.jpg" alt="Carousel image 1" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/carousel-right-2.jpg" alt="Carousel image 2" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/carousel-right-3.jpg" alt="Carousel image 3" />
-            </div>
-          </div>
-
-          <button class="carousel-button next" type="button" aria-label="Next image">&#8594;</button>
-          <div class="carousel-dots" aria-label="Carousel navigation"></div>
-        </div>
-      </div>
-
-      <!-- CAROUSEL ON THE LEFT -->
-      <div class="media-block">
-        <div class="carousel" data-carousel>
-          <button class="carousel-button prev" type="button" aria-label="Previous image">&#8592;</button>
-
-          <div class="carousel-track">
-            <div class="carousel-slide">
-              <img src="images/carousel-left-1.jpg" alt="Carousel image 1" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/carousel-left-2.jpg" alt="Carousel image 2" />
-            </div>
-            <div class="carousel-slide">
-              <img src="images/carousel-left-3.jpg" alt="Carousel image 3" />
-            </div>
-          </div>
-
-          <button class="carousel-button next" type="button" aria-label="Next image">&#8594;</button>
-          <div class="carousel-dots" aria-label="Carousel navigation"></div>
-        </div>
-
-        <div class="media-text">
-          <h2>[Section Title: Carousel Left, Text Right]</h2>
-          <p>
-            [This is the same carousel block, just placed first so it appears on the left side on
-            larger screens.]
-          </p>
-          <p>
-            [You can reuse these blocks in any order depending on the story you want the page to tell.]
-          </p>
-        </div>
-      </div>
-
-      <!-- FULL-WIDTH IMAGE WITH CAPTION -->
-      <figure class="full-image">
-        <div class="full-image-frame">
-          <img src="images/full-width-image.jpg" alt="Large project image" />
-        </div>
-        <figcaption class="image-caption">
-          [Short caption: explain what this drawing, render, model photo, or final view is showing.]
-        </figcaption>
-      </figure>
-    </section>
-  </div>
-
+      
 
   <!-- FULL WIDTH CAROUSEL IMAGES-->
   
@@ -169,37 +77,55 @@
     <div class="full-carousel-viewport">
       <div class="full-carousel-track">
         <figure class="full-carousel-slide">
-          <img src="PROCESS-PROJECT/handraw1.webp" alt="Model view one" />
+          <img src="2.01_draw1-01.webp"  />
           <figcaption class="full-carousel-caption">
-            Caption for the first image.
+            The objects in their initial states
           </figcaption>
         </figure>
   
         <figure class="full-carousel-slide">
-          <img src="PROCESS-PROJECT/handraw2 (1).webp" alt="Model view two" />
+          <img src="2.02_Action_diagram_try3_real.webp"  />
           <figcaption class="full-carousel-caption">
-            Caption for the second image.
+            Diagram of the transformations
           </figcaption>
         </figure>
   
         <figure class="full-carousel-slide">
-          <img src="PROCESS-PROJECT/handraw3.webp" alt="Model view three" />
+          <img src="2.03_draw1.webp"  />
           <figcaption class="full-carousel-caption">
-            Caption for the third image.
+            Diagram of the construction of the main curve
           </figcaption>
         </figure>
 
         <figure class="full-carousel-slide">
-          <img src="PROCESS-PROJECT//handraw4.webp" alt="Model view three" />
+          <img src="2.04_draw2.webp"  />
           <figcaption class="full-carousel-caption">
-            Caption for the third image.
+            Diagram of every position of the objects after each transformation state
           </figcaption>
         </figure>
 
         <figure class="full-carousel-slide">
-          <img src="PROCESS-PROJECT//handraw6.webp" alt="Model view three" />
+          <img src="2.5-2.8 Drawings_Artboard 5.webp"  />
           <figcaption class="full-carousel-caption">
-            Caption for the third image.
+            Diagram of every curve constructed after each transformation state
+          </figcaption>
+        </figure>
+        <figure class="full-carousel-slide">
+          <img src="2.5-2.8 Drawings_Artboard 6.webp"  />
+          <figcaption class="full-carousel-caption">
+            Diagram of every curve constructed after each transformation state
+          </figcaption>
+        </figure>
+        <figure class="full-carousel-slide">
+          <img src="2.5-2.8 Drawings_Artboard 7.webp"  />
+          <figcaption class="full-carousel-caption">
+            Diagram of every curve constructed after each transformation state
+          </figcaption>
+        </figure>
+        <figure class="full-carousel-slide">
+          <img src="2.5-2.8 Drawings_Artboard 8.webp"  />
+          <figcaption class="full-carousel-caption">
+            Diagram of every curve constructed after each transformation state
           </figcaption>
         </figure>
       </div>
@@ -213,24 +139,65 @@
   </div>
 
 
-
-  <!-- DOUBLE IMAGES -->
-
-
-  <div class="double-image-block">
-    <div class="double-image-grid">
-      <figure class="double-image-item">
-        <img src="PROCESS-PROJECT/PLAN_DRAWING_port.webp" alt="Model view one" />
-        <figcaption>Plan view</figcaption>
-      </figure>
-  
-      <figure class="double-image-item">
-        <img src="PROCESS-PROJECT/SECTION_1_port.webp" alt="Model view two" />
-        <figcaption>Section cut through the back of the promenade</figcaption>
-      </figure>
+  <!-- FULL-WIDTH IMAGE WITH CAPTION -->
+  <figure class="full-image">
+    <div class="full-image-frame">
+      <img src="Project2GR_FrameAnimation_JackFuller - Copy.gif"  />
     </div>
+    <figcaption class="image-caption">
+      Animation showing the motion of the objects and how the points and curve move with them
+    </figcaption>
+  </figure>
+
+
+  <!-- FULL WIDTH CAROUSEL IMAGES-->
+  
+  <div class="full-carousel-block" data-full-carousel>
+    <button class="full-carousel-button prev" type="button" aria-label="Previous image">
+      &#8592;
+    </button>
+  
+    <div class="full-carousel-viewport">
+      <div class="full-carousel-track">
+        <figure class="full-carousel-slide">
+          <img src="ModelPhoto_04.jpg"  />
+          <figcaption class="full-carousel-caption">
+            Photo of the physical model of the resulting drawing
+          </figcaption>
+        </figure>
+  
+        <figure class="full-carousel-slide">
+          <img src="ModelPhoto_06_detailed2 copy.webp"  />
+          <figcaption class="full-carousel-caption">
+            Photo of the physical model of the resulting drawing          
+          </figcaption>
+        </figure>
+  
+        <figure class="full-carousel-slide">
+          <img src="ModelPhoto_10.jpg"  />
+          <figcaption class="full-carousel-caption">
+            Photo of the physical model of the resulting drawing          
+          </figcaption>
+        </figure>
+
+  
+      </div>
+    </div>
+  
+    <button class="full-carousel-button next" type="button" aria-label="Next image">
+      &#8594;
+    </button>
+  
+    <div class="full-carousel-dots" aria-label="Carousel navigation"></div>
   </div>
 
-  <script src="../project-page-script2.js"></script>
+
+
+</section>
+
+
+  
+
+<script src="../project-page-script2.js"></script>
 </body>
 </html>
