@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let currentIndex = 0;
       let pointerStartX = null;
+      let pointerStartY = null;
       let pointerDeltaX = 0;
+      let pointerDeltaY = 0;
 
       const wrapIndex = (value) => {
         const total = slides.length;
@@ -94,6 +96,30 @@ document.addEventListener('DOMContentLoaded', () => {
         updateNavPosition();
       };
 
+      const resetPointerState = () => {
+        pointerStartX = null;
+        pointerStartY = null;
+        pointerDeltaX = 0;
+        pointerDeltaY = 0;
+      };
+
+      const endSwipe = () => {
+        if (pointerStartX === null || pointerStartY === null) {
+          return;
+        }
+
+        const isHorizontalSwipe =
+          Math.abs(pointerDeltaX) > 50 &&
+          Math.abs(pointerDeltaX) > Math.abs(pointerDeltaY);
+
+        if (isHorizontalSwipe) {
+          currentIndex = wrapIndex(currentIndex + (pointerDeltaX < 0 ? 1 : -1));
+          update();
+        }
+
+        resetPointerState();
+      };
+
       dotsContainer.innerHTML = '';
 
       slides.forEach((_, index) => {
@@ -118,41 +144,39 @@ document.addEventListener('DOMContentLoaded', () => {
         update();
       });
 
-      viewport.style.touchAction = 'pan-y';
+      viewport.style.touchAction = 'pan-y pinch-zoom';
 
       viewport.addEventListener('pointerdown', (event) => {
+        if (event.pointerType === 'mouse' && event.button !== 0) {
+          return;
+        }
+
         pointerStartX = event.clientX;
+        pointerStartY = event.clientY;
         pointerDeltaX = 0;
+        pointerDeltaY = 0;
       });
 
       viewport.addEventListener('pointermove', (event) => {
-        if (pointerStartX === null) {
+        if (pointerStartX === null || pointerStartY === null) {
           return;
         }
 
         pointerDeltaX = event.clientX - pointerStartX;
+        pointerDeltaY = event.clientY - pointerStartY;
       });
-
-      const endSwipe = () => {
-        if (pointerStartX === null) {
-          return;
-        }
-
-        if (Math.abs(pointerDeltaX) > 50) {
-          currentIndex = wrapIndex(currentIndex + (pointerDeltaX < 0 ? 1 : -1));
-        }
-
-        pointerStartX = null;
-        pointerDeltaX = 0;
-        update();
-      };
 
       viewport.addEventListener('pointerup', endSwipe);
       viewport.addEventListener('pointercancel', endSwipe);
-      viewport.addEventListener('pointerleave', () => {
-        if (pointerStartX !== null) {
+
+      viewport.addEventListener('pointerleave', (event) => {
+        if (event.pointerType === 'mouse') {
           endSwipe();
         }
+      });
+
+      block.querySelectorAll('img').forEach((img) => {
+        img.setAttribute('draggable', 'false');
       });
 
       const refreshLayout = () => {
