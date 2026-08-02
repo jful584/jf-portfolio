@@ -125,3 +125,8 @@
     font-size: 10px;
   }
 }
+@media (max-width: 500px) {
+  .project-card {
+    min-height: auto;
+  }
+}
