@@ -20,7 +20,7 @@ const projects = [
       "PROJECT-PAGES/CHAIR-PROJECT/mesitting_good.webp",
       "PROJECT-PAGES/CHAIR-PROJECT/1722_Sectiondrawing_ copy_cover.webp"
     ],
-    link: "PROJECT-PAGES/CHAIR-PROJECT/"
+    link: "PROJECT-PAGES/CHAIR-PROJECT/chair-page.html"
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ const projects = [
       "PROJECT-PAGES/DIAGRAM-PROJECT/proj1-1_lightrail2_print2.webp",
       "PROJECT-PAGES/DIAGRAM-PROJECT/Generative_Model_Final-Print_01.webp"
     ],
-    link: "PROJECT-PAGES/DIAGRAM-PROJECT/"
+    link: "PROJECT-PAGES/DIAGRAM-PROJECT/diagram-page.html"
   },
   {
     id: 8,
@@ -98,7 +98,7 @@ const projects = [
       "PROJECT-PAGES/AIRPORT-PROJECT/term1 section perspective drawing f.webp",
       "PROJECT-PAGES/AIRPORT-PROJECT/term1 stair draw2 f.webp"
     ],
-    link: "PROJECT-PAGES/AIRPORT-PROJECT/"
+    link: "PROJECT-PAGES/AIRPORT-PROJECT/airport-page.html"
   },
 ];
 

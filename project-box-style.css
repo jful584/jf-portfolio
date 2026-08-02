@@ -21,8 +21,8 @@
   background: none;
   cursor: pointer;
   font: inherit;
-  border-radius: 8px;
   transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
 #sort-toggle:hover {
